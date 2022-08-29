@@ -14,3 +14,17 @@ This repo contains the simple implementation of grpc using python.
 ```
 python -m grpc_tools.protoc --proto_path=.  ./bidirecctional.proto --python_out=. --grpc_python_out=.
 ```
+
+### Step-5: run server
+
+```
+cd example/
+python3 unary_server.py
+
+```
+
+### Step-6: open a second terminal and run client server
+
+```
+python3 unary_client.py
+```
